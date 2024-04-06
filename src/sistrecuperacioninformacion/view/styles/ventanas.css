@@ -1,0 +1,100 @@
+#paneBarraSuperior{
+    -fx-background-color:  #666C72;
+}
+/*Botones de cerrar y minimizar la ventana*/
+#boton_cerrar:hover{
+    -fx-background-color: #C42B1C
+}
+
+#boton_minimizar:hover{
+    -fx-background-color: #99A2AB
+}
+
+/*Estilo que da el fondo gradient al contenedor del pane principal*/
+.ventanas {
+    -fx-background-color: radial-gradient(center 90% 90%, radius 60%, #D0D5DA, #99A2AB);
+}
+
+/*Estilo para los botones*/
+Button{
+    -fx-background-color: #707581;
+    -fx-border-width: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 18px;
+    -fx-background-radius: 40 ;   
+}
+
+Button:hover{
+    -fx-background-color: #949DA6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0); 
+}
+
+
+
+/*Estilo general para todos los label*/
+.label {
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,1), 10, 0, 0, 1);
+}
+
+/*Estilo para los label que titulan las diferentes vistas*/
+.labelEncabezado {
+    -fx-font-size: 20px; 
+    -fx-font-weight: bold;
+}
+
+
+/*TEXT AREA*/
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+/*********************************************************/
+/* Propiedades de la barra donde está la barrita que sube y baja*/
+.text-area .scroll-pane .scroll-bar:vertical,
+.text-area .scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.text-area .scroll-pane .scroll-bar:vertical .increment-button,
+.text-area .scroll-pane .scroll-bar:vertical .decrement-button,
+.text-area .scroll-pane .scroll-bar:horizontal .increment-button,
+.text-area .scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-shape: "";
+    -fx-padding: -1;
+}
+
+.text-area .scroll-pane .scroll-bar:vertical {
+    -fx-padding: 0 2 0 2;
+}
+.text-area .scroll-pane .scroll-bar:horizontal {
+    -fx-padding: 2 0 2 0;
+}
+
+/*Propiedades de la barrita que sube y baja*/
+.text-area .scroll-pane .scroll-bar:vertical .thumb,
+.text-area .scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #797F8B;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20px;
+    -fx-shape:"";
+}
+
+.text-area .content {
+    -fx-text-alignment: justify;
+    -fx-font-size: 10px;
+
+}
